@@ -39,7 +39,7 @@ class CountryConfigService implements CountryConfigInterface {
             throw new Exception("Country Code not found");
         }
 
-        $country_code = $country['code'];
+        $country_code = strtolower($country['code']);
 
         $countryConfig = "countries.{$country_code}";
 

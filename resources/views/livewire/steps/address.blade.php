@@ -1,7 +1,7 @@
 <div>
     <form wire:submit.prevent="submitStep">
         <div class="mb-4">
-            <label class="form-label">{{ __('address_country') }}</label>
+            <label class="form-label">{{ __('address.country') }}</label>
             <select class="form-select @error('country') is-invalid @enderror"
                      wire:model="country" wire:change="handleCountryChange($event.target.value, $event.target.getAttribute('data-code'))">
                 <option value="">Select Country</option>

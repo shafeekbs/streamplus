@@ -63,8 +63,12 @@ php artisan db:seed
 **Country Configuration**
 - Address fields in the country can be configured. Remove deafult fields and update rules for the fields
 - Config path - config/countries/[country_code].php
+- File names should be in lowercase
 - Create a new config file for a country with the following format. If not default config will be used.
+- fields hold an associative array of field_name as key and lang key for labels
+- rules hold the validation rules for a specific country
 ```php
+//app/config/countries/us.php - For United States
 return [
     'fields' => [
         'address_line_1' => 'address.address_line_1',
