@@ -153,8 +153,9 @@ The application uses the following main tables:
 
 ## Improvement Considerations
 - **Connecting members with user data**: Since the task was to onbaording members members and users tables are not connected. Users table can be used to hold name, email and members table can hold addtional data
-- **To integrate payment gateways, create new service implementing PaymentServiceInterface **
-- 
+- **To integrate payment gateways**, create new service implementing PaymentServiceInterface
+
+
 ## Security Considerations
 
 - All user inputs are validated and sanitized

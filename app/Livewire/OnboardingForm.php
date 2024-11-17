@@ -26,7 +26,8 @@ class OnboardingForm extends Component
         'previousStep',
         'updateFormData',
         'subscriptionChange',
-        'submitForm'
+        'submitForm',
+        'goToStep'
 
     ];
 
@@ -37,6 +38,10 @@ class OnboardingForm extends Component
     public function mount() {
 
         $this->formData = session()->get('form_data') ?? [];
+        if(isset($this->formData['step1']['subscriptionType']) && $this->formData['step1']['subscriptionType'] == 'premium') {
+
+            $this->totalSteps=4;
+        }
 
     }
 

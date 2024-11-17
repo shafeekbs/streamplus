@@ -31,7 +31,7 @@
             <div class="col-md-6 mb-4">
                 <label class="form-label">CVV</label>
                 <div class="input-group">
-                    <input type="text"
+                    <input type="password"
                            class="form-control @error('cvv') is-invalid @enderror"
                            wire:model.lazy="cvv"
                            placeholder="123"
